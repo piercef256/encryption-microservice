@@ -1,7 +1,7 @@
 ### Programmatically Request and Receive Data from the Encryption Microservice
 In Python, you can use the requests library ro make POST requests to each endpoint, with the password and key passed in the body, then save the response as a local variable. Each response will come back as JSON. Fully implemented example calls can be found in the eaxmple_calls.py file.
 
-Example POST request to the /encrypt endpoint:
+#### Example POST request to the /encrypt endpoint:
 ```
 response = requests.post("http://127.0.0.1:9001/encrypt", json={
     "password": "secret-password",
@@ -11,7 +11,7 @@ response = requests.post("http://127.0.0.1:9001/encrypt", json={
 Extract the JSON data from the HTTP response.
 ```encrypted_data = response.json()```
 
-Example POST request to the /decrypt endpoint:
+#### Example POST request to the /decrypt endpoint:
 ```
 response = requests.post("http://127.0.0.1:9001/decrypt", json={
     "encrypted_password": encrypted_password,
