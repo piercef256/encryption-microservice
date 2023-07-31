@@ -12,7 +12,10 @@ Extract the JSON data from the HTTP response.
 
 Example POST request to the /decrypt endpoint:
 ```
-response = requests.post("http://127.0.0.1:9001/decrypt", json={ "encrypted_password": encrypted_password, "key": "encryption-key" })
+response = requests.post("http://127.0.0.1:9001/decrypt", json={
+    "encrypted_password": encrypted_password,
+    "key": "encryption-key"
+})
 ```
 Extract the JSON data from the HTTP response.
 ```decrypted_data = response.json()```
