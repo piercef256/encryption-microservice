@@ -55,7 +55,7 @@ Content-Type: application/json
 
 Request Body: 
 { 
-"password": string,
+"encrypted_password": string,
 "key": string
 }
 

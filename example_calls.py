@@ -38,7 +38,7 @@ if __name__ == "__main__":
     password = "secret-password"
     key = "encryption-key"
 
-    encrypted_password = encrypt_data(base_url, password, key)
+    encrypted_password = encrypt_data(base_url, 'different password', key)
     if encrypted_password:
         print("Encrypted Data:", encrypted_password)
 
