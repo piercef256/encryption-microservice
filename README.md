@@ -1,5 +1,5 @@
 ### Programmatically Request and Receive Data from the Encryption Microservice
-In Python, you can use the requests library ro make POST requests to each endpoint, with the password and key passed in the body, then save the response as a local variable. Each response will come back as JSON. Fully implemented example calls can be found in the eaxmple_calls.py file.
+In Python, you can use the requests library ro make POST requests to each endpoint, with the password and key passed in the body, then save the response as a local variable. Each response will come back as JSON. Fully implemented example calls can be found in the eaxmple_calls.py file. Spaces are not allowed in the password, nor are they allowed in the key.
 
 #### Example POST request to the /encrypt endpoint:
 ```
